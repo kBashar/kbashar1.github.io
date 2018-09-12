@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kbashar's dwelling | Go-log day 1</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Khyrul Bashar" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/about-me.html">About me</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="/">Kbashar's dwelling</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">            <h4 class="date">ফেব্রু 15, 2016</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="/go-log-day-1.html" rel="bookmark" title="Permanent Link to &quot;Go-log day 1&quot;">Go-log day 1</a>
+                </h2>
+
+                
+                
+
+                <h1>Go-log (Day 1)</h1>
+<p>I've already once tried to learn go months ago but didn't really push it seriously enough to complete the beginner level. This time I hope to touch the end line. </p>
+<h3>First tutorial</h3>
+<h6>@ 2:20 PM</h6>
+<p>Googling "go tutorial" land me to interactive go tutorial made by go team. Comprising a code editor and server side code running, if you are familier with codeacademy you have already seen this, just a less glossy version. If you have go installed, you have the whole tutorial offline right from your browser, Cool!
+link - <a href="https://tour.golang.org/">A Tour of go</a></p>
+<h3>Type declaration</h3>
+<h6>@2:40 PM</h6>
+<p>type declaration is slightly different in go than other C family lanaguages. just in first glance what I got is 
+in C</p>
+<div class="highlight"><pre><span></span>int x,  int main(int arg, char argc[])
+</pre></div>
+
+
+<p>in go</p>
+<div class="highlight"><pre><span></span>x int,  func main(arg int, argv []char) int
+</pre></div>
+
+
+<p>The tutorial linked a nice article discussing the difference of type declaration in go from C. <a href="http://blog.golang.org/gos-declaration-syntax">Go's Declaration Syntax</a></p>
+<h3>Multiple results</h3>
+<h6>@ 3:10 PM</h6>
+<p>Most exciting thing so far. A function can return more than one result. Now it remembers me of my second or third week of college. My crush asked(well, of course she doesn't know about crush thing) me asked about how to return more than one result from a function in C and I have spent hours in despair to accomplish it ! :D   </p>
+<div class="highlight"><pre><span></span>func swap(x, y string) (string, string) {
+      return y, x
+}
+</pre></div>
+
+
+<h4>Exported names must start with a capital letter</h4>
+<h6>@3:20 PM</h6>
+<div class="highlight"><pre><span></span>fmt.Println(34)
+</pre></div>
+
+
+<p>here 'P' of Println is in capital.</p>
+<h3>var</h3>
+<h6>@3:26 PM</h6>
+<p>var is used to declare a list of variables. I've seen this in C# and javascript.
+    var i,j int
+There is an interesting way to initialize the variable.
+    var c, python, java = true, false, "no!"</p>
+<p>there is := short assignment statement.
+    k := 3 
+without explicit type declaration. But it can only be used inside the function body while var is allowded inside package and function.</p>
+<h4>Basic types</h4>
+<h6>@3:40 PM</h6>
+<p>For me two types are new, rune and complex (complex64 complex128)
+rune is alias for int32, represents a Unicode code point. The "rune" name is new, I have to see why this namaing.</p>
+<p>var, const and import can be factored.
+import (
+    "fmt"
+    "math/cmplx"
+)</p>
+<div class="highlight"><pre><span></span>var (
+      ToBe   bool       = false
+      MaxInt uint64  = 1&lt;&lt;64 - 1
+      z  complex128 = cmplx.Sqrt(-5 + 12i)
+)
+</pre></div>
+
+
+<h4>Initial values</h4>
+<h6>@4:02 PM</h6>
+<p>for numeric variables 0.
+for boolean false.
+for string " " empty string.</p>
+<h4>Type conversion</h4>
+<h6>@4:07 PM</h6>
+<p>The expression T(v) converts the value v to the type T. const is the keyword for declaring constant. only "=" can be used to declare const. </p>
+<h6>@4: 12 PM</h6>
+<p>First part of Basics( Packages, variables, and functions) has been finished, I got a brief experience of the go syntax.</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="/go-log-day-1.html">posted at 00:00</a>
+                    &nbsp;&middot;&nbsp;<a href="/category/codelog.html" rel="tag">codelog</a>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
